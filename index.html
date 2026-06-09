@@ -466,6 +466,23 @@ font-family:'Cardo',serif;font-size:12px;letter-spacing:.16em;
 text-transform:uppercase;color:var(--gold-dim);margin-top:1.4rem;
 }
 
+/* ── DOCUMENTS (PDF) ──────────────────────────────── */
+.docs{text-align:center}
+.doc-links{
+display:flex;flex-wrap:wrap;gap:16px;
+justify-content:center;margin-top:.5rem;
+}
+.doc-btn{
+display:inline-flex;align-items:center;gap:11px;
+font-family:'Cardo',serif;letter-spacing:.18em;text-transform:uppercase;
+font-size:11px;color:var(--gold);text-decoration:none;
+padding:14px 24px;border:1px solid var(--line);
+transition:all .35s ease;
+}
+.doc-btn:hover{border-color:var(--gold);color:var(--gold-bright);box-shadow:0 0 22px -8px var(--gold)}
+.doc-btn svg{width:15px;height:16px;flex:none}
+.doc-btn .ext{font-size:9px;letter-spacing:.1em;color:var(--gold-dim)}
+
 /* ── PIED ─────────────────────────────────────────── */
 footer{text-align:center;padding:8vh 0 6vh;border-top:1px solid var(--line);margin-top:5vh}
 .cross{
@@ -528,6 +545,8 @@ h1{-webkit-text-fill-color:var(--gold-bright)}
 <a href="#texte">Le texte</a>
 <span class="sep">✦</span>
 <a href="#projet">Le projet</a>
+<span class="sep">✦</span>
+<a href="#documents">Documents</a>
 <span class="sep">✦</span>
 <a href="#boutique">Boutique</a>
 <span class="sep">✦</span>
@@ -702,6 +721,31 @@ s'affiche d'emblée, tout ce qui est dedans se déroule.
 <div class="section-label reveal">Le projet</div>
 <p class="reveal">Chaque Servul est taillé au couteau, dans le tilleul, à la main. <strong>Pièce unique.</strong> Aucun identique.</p>
 <p class="reveal">Un objet unique introduit en contrebande dans le circuit de la reproduction. Pour le moment, il ne porte plus qu'il ne peut en dire. Les mains dans les poches. Ça viendra.</p>
+</section>
+
+<!-- ── DOCUMENTS (PDF) ──────────────────────────── -->
+<section class="docs" id="documents">
+<div class="section-label reveal">Documents</div>
+<div class="doc-links reveal">
+<!--
+════════ TÉLÉCHARGEMENTS ════════
+Les fichiers sont dans le sous-dossier « pdf/ », à côté de cette page.
+Pour chaque bouton : mets le nom du fichier dans href="pdf/…"
+et le titre affiché juste avant <span class="ext">…</span>.
+-->
+<a class="doc-btn" href="pdf/servul_front_1.png" download>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5L5 20"/></svg>
+Blister — recto <span class="ext">PNG</span>
+</a>
+<a class="doc-btn" href="pdf/servul_front_2.png" download>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5L5 20"/></svg>
+Blister — verso <span class="ext">PNG</span>
+</a>
+<a class="doc-btn" href="pdf/Servul.pdf" download>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5"/></svg>
+Le récit complet <span class="ext">PDF</span>
+</a>
+</div>
 </section>
 
 <!-- ── BOUTIQUE ─────────────────────────────────── -->
